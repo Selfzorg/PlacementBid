@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ads Placement Battle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loading Overlay -->
+    <div id="loading" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Battle Submission Form -->
+    <div class="container">
+        <h1>Ads Placement Battle</h1>
+        <form id="battle-form">
+            <div class="team-inputs">
+                <!-- Team 1 Inputs -->
+                <div class="team">
+                    <h2>Team 1</h2>
+                    <div class="input-group">
+                        <label for="team1-name">Team Name:</label>
+                        <input type="text" id="team1-name" name="team1-name" required placeholder="Enter Team 1 Name">
+                    </div>
+                    <div class="input-group">
+                        <label for="team1-input1">P1 Bid:</label>
+                        <input type="number" step="0.01" id="team1-input1" name="team1-input1" required placeholder="Enter a number">
+                    </div>
+                    <div class="input-group">
+                        <label for="team1-input2">P2 Bid:</label>
+                        <input type="number" step="0.01" id="team1-input2" name="team1-input2" required placeholder="Enter a number">
+                    </div>
+                    <div class="input-group">
+                        <label for="team1-input3">P3 Bid:</label>
+                        <input type="number" step="0.01" id="team1-input3" name="team1-input3" required placeholder="Enter a number">
+                    </div>
+                    <div class="input-group">
+                        <label for="team1-input4">P4 Bid:</label>
+                        <input type="number" step="0.01" id="team1-input4" name="team1-input4" required placeholder="Enter a number">
+                    </div>
+                </div>
+
+                <!-- Team 2 Inputs -->
+                <div class="team">
+                    <h2>Team 2</h2>
+                    <div class="input-group">
+                        <label for="team2-name">Team Name:</label>
+                        <input type="text" id="team2-name" name="team2-name" required placeholder="Enter Team 2 Name">
+                    </div>
+                    <div class="input-group">
+                        <label for="team2-input1">P1 Bid:</label>
+                        <input type="number" step="0.01" id="team2-input1" name="team2-input1" required placeholder="Enter a number">
+                    </div>
+                    <div class="input-group">
+                        <label for="team2-input2">P2 Bid:</label>
+                        <input type="number" step="0.01" id="team2-input2" name="team2-input2" required placeholder="Enter a number">
+                    </div>
+                    <div class="input-group">
+                        <label for="team2-input3">P3 Bid:</label>
+                        <input type="number" step="0.01" id="team2-input3" name="team2-input3" required placeholder="Enter a number">
+                    </div>
+                    <div class="input-group">
+                        <label for="team2-input4">P4 Bid:</label>
+                        <input type="number" step="0.01" id="team2-input4" name="team2-input4" required placeholder="Enter a number">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password Input for Submission -->
+            <div class="input-group">
+                <label for="submit-password">Admin Password:</label>
+                <input type="password" id="submit-password" name="submit-password" required placeholder="Enter Password">
+            </div>
+
+            <button type="submit">Submit Bids</button>
+        </form>
+        <div class="navigation">
+            <a href="leaderboard.html">View Leaderboard</a>
+        </div>
+    </div>
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworks-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
