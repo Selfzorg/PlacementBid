@@ -68,6 +68,19 @@ function handleFormSubmission() {
         ];
 
         // Calculate sums
+        for(let i=0; i<4; i++){
+            if(team1Inputs[i] > team2Inputs[i]){
+                team2Inputs[i]=0;
+            }
+            else if(team2Inputs[i] > team1Inputs[i]){
+                team1Inputs[i] =0;
+            }
+            else{
+                team1Inputs[i]=0;
+                team2Inputs[i]=0;
+            }
+        }
+        
         const team1Sum = solve(team1Inputs);
         const team2Sum = solve(team2Inputs);
 
